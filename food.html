@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Passions+Conflict&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo" style="color: rgb(255, 238, 0); font-size: large">Food<span>.</span></a>
+        <ul class="navigation">
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#expert">Expert</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+        <h2 style="color: antiquewhite; font-size: 55px;" >Always good choice</h2>
+        <p>XYZ Food Company is a leading provider of high-quality, nutritious food products that cater to diverse consumer preferences.
+With a commitment to sustainability, our food company sources fresh, locally sourced ingredients to create delicious and environmentally friendly offerings.
+Innovation is at the heart of our operations, as we continuously strive to develop new and exciting culinary experiences for our customers.
+XYZ Food Company is dedicated to fostering healthy lifestyles by promoting transparency in our ingredient sourcing and production processes.
+Our mission is to deliver not only great-tasting food but also a sense of well-being, making us a trusted choice for those seeking wholesome and flavorful culinary options.
+        </p>        
+        <a href="#" class="btn">our menu</a>
+        </div>
+    </section>
+    <script>
+        window.addEventListener('scroll',function(){
+            const header=document.querySelector('header');
+            header.ClassList.toggle("sticky",window.scrolly>0);
+        });
+    </script>
+</body>
+</html>
